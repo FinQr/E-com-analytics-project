@@ -1,0 +1,4 @@
+.env
+/log/etl.log
+__pycache__/
+.ipynb_checkpoints

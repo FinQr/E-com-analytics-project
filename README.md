@@ -20,7 +20,7 @@
 ## Структура проекта
 
 ```
-e-com-analyze-project/
+e-com-analytics-project/
 ├── config/                         
 |   ├── .env                        # переменные окружения (скрыт)                    
 |   ├── log_config.py               # настройка логирования
@@ -51,10 +51,13 @@ e-com-analyze-project/
 │   ├── pgdb.py                     # модуль подключения к БД
 │   └── pgdbrequirements.txt        # зависимости
 |
-├── sql/                            
+├── sql/
+│   ├── Client_analyze.sql          # когортный и rfm анализ
+│   ├── Datalens.sql                # запросы для ql чартов в DataLens                         
 │   ├── DDL_DWH.sql                 # создание dwh
 │   ├── DDL_STG.sql                 # создание staging слоя (raw таблицы)
-│   └── from_stg_to_dwh.sql         # загрузка данных из staging → dwh
+│   ├── from_stg_to_dwh.sql         # загрузка данных из staging → dwh
+│   └── Product_analyze             # abc/xyz анализ
 |
 ├── .gitignore
 └── README.md                       # документация
